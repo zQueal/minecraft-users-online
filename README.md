@@ -2,6 +2,7 @@ Users Online PHP Mod
 ======================
 
 This script is to be used to display the number of currently playing players for your bukkit minecraft server.
+Unstylized Demo: http://wonderproject.net/count.php (v2, also shows usernames if people are online).
 
 Requirements
 ======================
