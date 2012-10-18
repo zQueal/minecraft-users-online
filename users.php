@@ -20,16 +20,5 @@ function numberOnline(){
         }
 }
 
-/* Work in progresa
-
-function usersOnline(){
-	global $users;
-	$users = file_get_contents('uonline.txt');
-	json_encode($users);
-	//echo json_encode($users);
-	print_r($users);
-}
-*/
-
 numberOnline();
 ?>
