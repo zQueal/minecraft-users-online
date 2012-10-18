@@ -20,8 +20,6 @@ function numberOnline(){
         }
 }
 
-/* Work in progresa
-
 function usersOnline(){
 	global $users;
 	$users = file_get_contents('uonline.txt');
@@ -29,7 +27,7 @@ function usersOnline(){
 	//echo json_encode($users);
 	print_r($users);
 }
-*/
 
 numberOnline();
+UsersOnline();
 ?>
