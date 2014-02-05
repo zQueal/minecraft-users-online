@@ -1,7 +1,7 @@
 _Users Online PHP Mod for Minecraft_
 ======================
 
-This script is to be used to display the number of currently playing players for your __bukkit minecraft server.__ [Working Demo](http://wonderproject.net/count.php) _(preview of master and v2)._
+This script is to be used to display the number of currently playing players for your __bukkit minecraft server.__
 
 _Requirements_
 ======================
@@ -20,7 +20,7 @@ followed by
 
     /vreload
 
-The last thing you have to do is to soft link the __usersonline.txt__ in your minecraft directory to a _ permissible_ directory.
+The last thing you have to do is to soft link the __usersonline.txt__ in your minecraft directory to a _permissible_ directory.
 
 __Example__
 
