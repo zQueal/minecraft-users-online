@@ -1,7 +1,7 @@
 _Users Online PHP Mod for Minecraft_
 ======================
 
-This script is to be used to display the number of currently playing players for your __bukkit minecraft server.__
+This script is to be used to display the number of currently playing players for your _bukkit minecraft server._
 
 _Requirements_
 ======================
@@ -32,10 +32,3 @@ For security reasons my user account does not have permission to the /root folde
     sudo ln -s /www/uonline.txt /root/mc/plugins/Vitals/onlineplayers.txt
 
 Assuming you have the Minecraft permissions, and you've setup $file within the php script you should be all set.
-
-_Setup_
-======================
-
-Most of the work is done for you by the Vitals mod, we just have to take the information and use it. The PHP file includes two functions (only one is of any consiquence at the moment) numberOnline(). You can use the script as-is, or include it (http://goo.gl/1T6lz) into your homepage or forums. __Stylized JSON user list coming soon!__
-
-~Xanza
