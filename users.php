@@ -1,22 +1,29 @@
 <?php
 
-function numberOnline() {
-  global $file, $lines, $text, $pieces;
-  $file = "http://hostname.ext/uonline.txt";
-  $lines = count(file($file));
-  $text = "No one is online right now!|person|people";
+$online = "http://hostname.ext/uonline.txt";
 
-  $pieces = explode('|', $text);
-
-  if($lines == 0) {
-    echo $pieces[0] . "<br /><br />";
-  }
-  if($lines == 1) {
-    echo $lines . " " . $pieces[1] . " is online!<br /><br />";
-  }
-  if($lines > 1) {
-    echo "There are " . $lines . " " . $pieces[2] . " are online!<br /><br />";
-  }
+function url_get_contents($url) {
+    if (!function_exists('curl_init')){ 
+        die('CURL is not installed!');
+    }
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $output = curl_exec($ch);
+    curl_close($ch);
+    return $output;
 }
 
-numberOnline();
+$count = url_get_contents($online);
+
+if($count = 0) {
+  echo 'No one is online.';
+}
+
+if($count = 1) {
+  echo 'One person is online.';
+}
+
+if($count > 1) {
+  echo 'There are '.$count.' people online.';
+}
