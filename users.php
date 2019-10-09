@@ -16,11 +16,11 @@ function url_get_contents($url) {
 
 $count = url_get_contents($online);
 
-if($count = 0) {
+if($count == 0) {
   echo 'No one is online.';
 }
 
-if($count = 1) {
+if($count == 1) {
   echo 'One person is online.';
 }
 
